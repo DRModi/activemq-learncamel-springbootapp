@@ -1,0 +1,21 @@
+(1) Took simple-learncamel-springbootapplication as boilerplate code.
+
+(2) Added ActiveMQ related dependencies to pom.xml
+
+(3) Updated the code according to ActiveMQ - Mainly route and Application.yml
+
+(4) Create active mq bean config class
+
+(5) Update from route in application.yml
+
+(6) Add GSON dependency to convert/Un-marshall input JSON payload to Java object
+
+(7) Create DataValidation processor, Configured BuildSQL processor to persist data to database
+
+(8) In order to validate insert successful - Added SQL node
+    (a) Camel-Sql dependency
+    (b) Build SQL Node route
+    (c) Log the route response and validate that insert happened.
+
+(9) In order to test select node in test cases, add packages.trust-all: true in application.yml under activemq configurations
+    - Recent camel version security has been updated, so add "packages.trust-all: true" in application.yml under activemq configurations
